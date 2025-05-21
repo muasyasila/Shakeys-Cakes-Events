@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4">
         <div className="absolute inset-0 bg-[url('/images/cake-bg.jpg')] bg-cover bg-center opacity-20" />
 
-        <h1 className="text-5xl md:text-7xl font-bold text-rose-800 relative z-10 mb-6">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-rose-800 relative z-10 mb-6">
           SHAKEYS CAKES & EVENTS
         </h1>
 
@@ -85,6 +85,88 @@ export default function Home() {
             title="Book in Advance"
             description="Plan your special day"
           />
+        </div>
+      </section>
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-7xl mx-auto text-center mb-10">
+          <h2 className="text-3xl font-bold">Latest Blog Posts</h2>
+          <p className="text-gray-600 mt-2">
+            Stay updated with our latest stories
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="/blog1.png"
+              alt="Blog 1"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <h3 className="text-xl font-semibold">
+                Sweet Secrets of a Perfect Cake
+              </h3>
+              <p className="text-sm text-gray-500 mb-2">
+                By Jane Doe · Apr 12, 2025
+              </p>
+              <p className="text-gray-700 mb-4">
+                Discover the top tips that every baker should know to make the
+                fluffiest cakes...
+              </p>
+              <button className="text-pink-600 font-semibold hover:underline">
+                Read More →
+              </button>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="/blog1.png"
+              alt="Blog 2"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <h3 className="text-xl font-semibold">
+                Garden Wedding Setup Inspiration
+              </h3>
+              <p className="text-sm text-gray-500 mb-2">
+                By Rodah · Mar 29, 2025
+              </p>
+              <p className="text-gray-700 mb-4">
+                Get inspired by our most elegant outdoor setups for your dream
+                wedding ceremony...
+              </p>
+              <button className="text-pink-600 font-semibold hover:underline">
+                Read More →
+              </button>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="/blog1.png"
+              alt="Blog 3"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <h3 className="text-xl font-semibold">
+                Behind the Scenes at Shakeys
+              </h3>
+              <p className="text-sm text-gray-500 mb-2">
+                By Team Shakeys · Feb 18, 2025
+              </p>
+              <p className="text-gray-700 mb-4">
+                Take a peek into our creative process — from design to
+                decoration and delivery...
+              </p>
+              <button className="text-pink-600 font-semibold hover:underline">
+                Read More →
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
