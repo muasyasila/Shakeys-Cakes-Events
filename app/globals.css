@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
+@import 'keen-slider/keen-slider.min.css';
+
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
